@@ -1,0 +1,167 @@
+.vid-wrapper {
+  margin-left: 210px;
+  margin-top: 75px;
+  transition: margin-left 0.3s ease;
+}
+
+.vid-grid {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.vid-container {
+  display: inline-block;
+
+  padding-left: 10px;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vid {
+  height: 390px;
+  width: 265px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.text1,
+.text2,
+.userprofile {
+  display: inline-block;
+  align-items: center;
+}
+
+.button-grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the width of the buttons as needed */
+}
+
+.buttons {
+  padding-bottom: 14px;
+  padding-left: 7px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+
+.text,
+.text1,
+.userprofile {
+  margin: 0;
+}
+
+.vid-time, .vid-time2 {
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 25px;
+  
+}
+
+.vid-time{
+  bottom: 74px;
+}
+
+.vid-time2{
+  bottom: 69px;
+}
+
+.userprofile {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.text {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 5px;
+}
+
+.text1,
+.text2 {
+  font-family: arial;
+  font-size: 12.5px;
+  margin: 0;
+}
+
+.text2 {
+  color: grey;
+  margin-left: 135px;
+}
+
+.text1{
+  padding-left: 5px;
+}
+
+.butt{
+  border: none;
+  background-color: rgb(216, 216, 216);
+  color: black;
+  font-family: arial;
+  border-radius: 5px;
+  padding: 7px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.butt:hover{
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.butt1{
+  border: none;
+  background-color: rgb(37, 37, 37);
+  color:white;
+  font-family: arial;
+  border-radius: 5px;
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.butt2{
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: arial;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 20px ;
+  z-index: 50px;
+  box-shadow: 0px 0px 10px 5px rgba(226, 226, 226, 0.75);
+}
+
+
+@media (max-width: 600px){
+  .vid-wrapper{
+    margin-left: 10px;
+  }
+  .vid-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vid  {
+    height: 350px;
+    width: 235px;
+    transition: height 0.3s ease, width 0.3s ease;
+  }
+ 
+}
+

@@ -1,0 +1,28 @@
+.left-sidebar{
+  
+  left: 0;
+  bottom: 0;
+  top: 58px;
+  background-color: #000000;
+  width: 200px;
+}
+
+.right-sidebar{
+  position: absolute; /* Changed from fixed */
+  right: 0;
+  bottom: 0;
+  top: 58px;
+  background-color: #000000;
+  width: 20px;
+  z-index: 2;
+}
+
+@media(max-width: 600px) {
+  .left-sidebar {
+    width: 10px;
+  }
+
+  .right-sidebar{
+    display: none;
+  }
+}
